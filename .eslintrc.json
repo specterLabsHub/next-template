@@ -1,0 +1,28 @@
+{
+  "extends": ["eslint:recommended", "next"],
+  "rules": {
+    "indent": ["error", 2, {
+      "SwitchCase": 1,
+      "ignoredNodes": ["ConditionalExpression"]
+    }],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "no-trailing-spaces": ["error"],
+    "space-in-parens": ["error", "never"],
+    "space-infix-ops": ["error"],
+    "block-spacing": ["error", "always"],
+    "eol-last": ["error"],
+    "no-unused-vars": "off",
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/alt-text": [0]
+  }
+}
